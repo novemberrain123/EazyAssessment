@@ -63,6 +63,7 @@ function Login() {
 
                 <label>Password</label>
                 <input
+                    maxLength={100}
                     type="password"
                     autoComplete="current-password"
                     value={password}
@@ -76,7 +77,13 @@ function Login() {
                 <div></div>
 
                 <button style={{ width: "50%" }} type="submit" >
-                Login
+                    Login
+                </button>
+
+                <div></div>
+
+                <button style={{ width: "50%" }} type="button" onClick={() => navigate("/register")}>
+                    Register
                 </button>
             </form>
         </div>

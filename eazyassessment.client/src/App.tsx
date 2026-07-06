@@ -1,6 +1,7 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Login from "./pages/Login";
 import Profile from "./pages/Profile";
+import Register from "./pages/Register";
 
 function ProtectedRoute({ children }: { children: React.ReactNode }) {
     const token = localStorage.getItem("token");
@@ -16,6 +17,7 @@ function App() {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Login />} />
+                <Route path="/register" element={<Register />} />
                 <Route
                     path="/profile"
                     element={

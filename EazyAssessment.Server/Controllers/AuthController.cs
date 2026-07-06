@@ -46,7 +46,7 @@ public class AuthController : ControllerBase
         _context.Users.Add(user);
         await _context.SaveChangesAsync();
 
-        return Ok("User registered successfully.");
+        return Ok();
     }
 
     [HttpPost("login")]

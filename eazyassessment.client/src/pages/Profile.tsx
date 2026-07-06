@@ -56,7 +56,7 @@ function Profile() {
             if (err instanceof Error) {
                 setMessage(err.message);
             } else {
-                setMessage("Failed to update profile.");
+                setMessage("An unexpected error occurred.");
             }
         }
     }
@@ -85,7 +85,7 @@ function Profile() {
                 setMessage(err.message);
             } else {
                 setShowUpload(false);
-                setMessage("Failed to update profile picture.");
+                setMessage("An unexpected error occurred.");
             }
         }
     }
