@@ -10,8 +10,8 @@ namespace EazyAssessment.Server.Services
 
         public BlobStorageService(IConfiguration configuration)
         {
-            _connectionString = configuration["AzureBlobStorage:ConnectionString"]!;
-            _containerName = configuration["AzureBlobStorage:ContainerName"]!;
+            _connectionString = configuration["BlobStorage:BlobConnection"]!;
+            _containerName = configuration["BlobStorage:ContainerName"]!;
         }
 
         public async Task<string> UploadAsync(IFormFile file)
