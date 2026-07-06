@@ -10,7 +10,7 @@ namespace EazyAssessment.Server.Services
 
         public BlobStorageService(IConfiguration configuration)
         {
-            _connectionString = configuration["BlobStorage:BlobConnection"]!;
+            _connectionString = configuration["BlobStorage:ConnectionString"]!;
             _containerName = configuration["BlobStorage:ContainerName"]!;
         }
 
