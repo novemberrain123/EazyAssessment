@@ -2,6 +2,10 @@
 
 A simple user management application built with React and ASP.NET Core Web API. The application supports user registration, JWT authentication, profile management, and profile picture uploads using Azure Blob Storage.
 
+## Demo
+
+Application: https://eazyassessment-api-cmhafzhfewdhewbw.southeastasia-01.azurewebsites.net/
+
 ## Tech Stack
 
 ### Frontend
@@ -86,11 +90,3 @@ npm install
 ```bash
 npm run dev
 ```
-
----
-
-## Assumptions
-
-- Authentication is implemented using JWT stored in browser local storage.
-- Refresh tokens were not implemented.
-- Azure Blob Storage is used for storing uploaded profile pictures.
